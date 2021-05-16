@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class DashboardService {
 
-  _url = 'https://ancient-thicket-17863.herokuapp.com/api/products/dashboards';
+  _url = '/api/products/dashboards';
 
 
   constructor(private http:HttpClient) { }

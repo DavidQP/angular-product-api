@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ProductService {
-  _url = 'https://ancient-thicket-17863.herokuapp.com/api/products';
+  _url = '/api/products';
 
   constructor(
     private http: HttpClient
@@ -21,5 +21,5 @@ export class ProductService {
    read(id: number):Observable<any> {
     return this.http.get(`${this._url}/${id}`);
    }
-
+   
 }
